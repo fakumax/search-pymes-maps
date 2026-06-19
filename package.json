@@ -1,0 +1,29 @@
+{
+  "name": "busca-empresas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Encuentra PyMEs de Misiones sin sitio web usando Google Places API",
+  "scripts": {
+    "buscar": "tsx src/index.ts",
+    "whatsapp": "tsx src/formatear-whatsapp.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
